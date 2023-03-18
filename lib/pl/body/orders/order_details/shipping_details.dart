@@ -10,7 +10,6 @@ import '../../utilities/references/user_ref.dart';
 import '../../utilities/text_style/text_styles.dart';
 import '../../utilities/widgets/wide_button.dart';
 
-
 class ShippingDetails extends StatelessWidget {
   final String? orderId;
   final String? addressId;
@@ -38,7 +37,7 @@ class ShippingDetails extends StatelessWidget {
               children: [
                           SizedBox(height: 20),
                           title(),
-                          AddressDetailsTable(addressModel: AddressModel.fromSnapshot(dataSnap.data!),),
+                          Container(height: 300,child:AddressDetailsTable(addressModel: AddressModel.fromSnapshot(dataSnap.data!),)),
                           Divider(height: 2.0),
                           deliverButton()
                  ] ),

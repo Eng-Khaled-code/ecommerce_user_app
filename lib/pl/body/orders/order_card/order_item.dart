@@ -7,11 +7,13 @@ class OrderItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Container(
-          height: 170.0,
+          height: 190.0,
           width: MediaQuery.of(context).size.width,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               itemImage(),
               SizedBox(width: 20.0),
